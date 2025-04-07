@@ -8,13 +8,14 @@ window.addEventListener("load", function () {
 	video.loop = false;
 	video.load(); // this applies the autoplay and loop false properly
 
-	document.querySelector("#volume").textContent = (video.volume * 100).toFixed(1) + "%";
+	document.querySelector("#volume").textContent = video.volume * 100 + "%";
+
 });
 
 // Play Button - Play the video and update the volume information.
 document.querySelector("#play").addEventListener("click", function () {
 	console.log("Play Video");
-	document.querySelector("#volume").textContent = (video.volume * 100).toFixed(1) + "%";
+	document.querySelector("#volume").textContent = video.volume * 100 + "%";
 	video.play();
 });
 
