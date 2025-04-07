@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 	video.loop = false;
 	video.load(); // this applies the autoplay and loop false properly
 
-	document.querySelector("#volume").textContent = video.volume * 100 + "%";
+	//document.querySelector("#volume").textContent = video.volume * 100 + "%";
 
 });
 
